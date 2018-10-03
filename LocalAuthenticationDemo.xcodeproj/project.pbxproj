@@ -13,6 +13,9 @@
 		0307AC1C21624983005E4AB9 /* LocalAuthenticationDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0307AC1A21624983005E4AB9 /* LocalAuthenticationDemo.xcdatamodeld */; };
 		0307AC1E21624985005E4AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0307AC1D21624985005E4AB9 /* Assets.xcassets */; };
 		0307AC2121624985005E4AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0307AC1F21624985005E4AB9 /* LaunchScreen.storyboard */; };
+		0307AC3021624E05005E4AB9 /* LocalAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307AC2F21624E05005E4AB9 /* LocalAuthentication.swift */; };
+		034B198E21649D3500ED9732 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B198D21649D3500ED9732 /* Constants.swift */; };
+		034B19902164B2C100ED9732 /* AuthenticationBlockState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B198F2164B2C100ED9732 /* AuthenticationBlockState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		0307AC1D21624985005E4AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0307AC2021624985005E4AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0307AC2221624985005E4AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0307AC2F21624E05005E4AB9 /* LocalAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthentication.swift; sourceTree = "<group>"; };
+		034B198D21649D3500ED9732 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		034B198F2164B2C100ED9732 /* AuthenticationBlockState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationBlockState.swift; sourceTree = "<group>"; };
+		034B19912164EF1F00ED9732 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,7 @@
 		0307AC0721624983005E4AB9 = {
 			isa = PBXGroup;
 			children = (
+				034B19912164EF1F00ED9732 /* README.md */,
 				0307AC1221624983005E4AB9 /* LocalAuthenticationDemo */,
 				0307AC1121624983005E4AB9 /* Products */,
 			);
@@ -56,15 +64,74 @@
 		0307AC1221624983005E4AB9 /* LocalAuthenticationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0307AC1321624983005E4AB9 /* AppDelegate.swift */,
-				0307AC1521624983005E4AB9 /* ViewController.swift */,
-				0307AC1721624983005E4AB9 /* Main.storyboard */,
-				0307AC1D21624985005E4AB9 /* Assets.xcassets */,
-				0307AC1F21624985005E4AB9 /* LaunchScreen.storyboard */,
-				0307AC2221624985005E4AB9 /* Info.plist */,
-				0307AC1A21624983005E4AB9 /* LocalAuthenticationDemo.xcdatamodeld */,
+				0307AC2C216249BF005E4AB9 /* Models */,
+				0307AC2A216249A1005E4AB9 /* Asset */,
+				0307AC2921624996005E4AB9 /* Storyboards */,
+				0307AC282162498C005E4AB9 /* Classes */,
+				0307AC2E21624DE6005E4AB9 /* OtherClasses */,
+				0307AC2B216249A7005E4AB9 /* Resources */,
 			);
 			path = LocalAuthenticationDemo;
+			sourceTree = "<group>";
+		};
+		0307AC282162498C005E4AB9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0307AC1321624983005E4AB9 /* AppDelegate.swift */,
+				0307AC1521624983005E4AB9 /* ViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0307AC2921624996005E4AB9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0307AC1721624983005E4AB9 /* Main.storyboard */,
+				0307AC1F21624985005E4AB9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0307AC2A216249A1005E4AB9 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				0307AC1D21624985005E4AB9 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		0307AC2B216249A7005E4AB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0307AC2221624985005E4AB9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0307AC2C216249BF005E4AB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0307AC2D216249C6005E4AB9 /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0307AC2D216249C6005E4AB9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0307AC1A21624983005E4AB9 /* LocalAuthenticationDemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0307AC2E21624DE6005E4AB9 /* OtherClasses */ = {
+			isa = PBXGroup;
+			children = (
+				034B198F2164B2C100ED9732 /* AuthenticationBlockState.swift */,
+				0307AC2F21624E05005E4AB9 /* LocalAuthentication.swift */,
+				034B198D21649D3500ED9732 /* Constants.swift */,
+			);
+			path = OtherClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034B198E21649D3500ED9732 /* Constants.swift in Sources */,
+				034B19902164B2C100ED9732 /* AuthenticationBlockState.swift in Sources */,
 				0307AC1621624983005E4AB9 /* ViewController.swift in Sources */,
 				0307AC1421624983005E4AB9 /* AppDelegate.swift in Sources */,
 				0307AC1C21624983005E4AB9 /* LocalAuthenticationDemo.xcdatamodeld in Sources */,
+				0307AC3021624E05005E4AB9 /* LocalAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,14 +356,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LocalAuthenticationDemo/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5GL3E4GW7P;
+				INFOPLIST_FILE = "$(SRCROOT)/LocalAuthenticationDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.LocalAuthenticationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "iPhone WiledCard";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,14 +375,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LocalAuthenticationDemo/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/LocalAuthenticationDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.LocalAuthenticationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
